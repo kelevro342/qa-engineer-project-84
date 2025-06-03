@@ -1,0 +1,87 @@
+---
+- summary: |
+    Проверка работы кнопки Корзина
+  status: pass
+
+- summary: |
+    Проверка работы кнопки Магазин
+  status: pass
+
+  - summary: |
+    Проверка работы кнопки Language
+  status: pass
+
+    - summary: |
+    Проверка работы кнопки Russian
+   status: fail
+       
+    - summary: |
+    Проверка добавления товара в Корзину
+   status: pass
+
+    - summary: |
+    Проверка кнопки Удалить
+   status: pass   
+
+       - summary: |
+    Проверка кнопки Очистить корзину
+   status: pass  
+
+          - summary: |
+    Проверка кнопки Оформить заказ
+   status: fail
+
+          - summary: |
+    Проверка кнопки Продолжить покупки
+   status: pass   
+
+          - summary: |
+    Проверка кнопки Следующая
+   status: pass   
+
+             - summary: |
+    Проверка кнопки Предыдущая
+   status: pass  
+
+             - summary: |
+    Проверка кнопки Категория
+   status: fail 
+
+                - summary: |
+    Проверка фильтрации товара при выборе категория
+   status: pass  
+
+                   - summary: |
+    Проверка формы поиска товара
+   status: pass  
+
+                      - summary: |
+    Проверка смены производителя при выборе категорий
+   status: fail
+
+                         - summary: |
+    Проверка формы Цена
+   status: pass
+
+                            - summary: |
+    Проверка формы Производитель
+   status: pass
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+   
+
+  
+
+  
