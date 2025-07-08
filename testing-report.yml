@@ -45,7 +45,7 @@
 
              - summary: |
     Проверка корректного функционирования мобильной версии сайта
-   status: pass 
+   status: fail
 
                 - summary: |
     Проверка входа с Firefox browser
