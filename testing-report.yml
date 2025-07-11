@@ -11,59 +11,59 @@
      Проверка поиска товара по ключевому слову
   status: pass
 
-    - summary: |
+   - summary: |
     Проверка фильтрации товара по ценовому диапозону
    status: pass
        
-    - summary: |
+   - summary: |
     Проверка фильтрации по нескольким брендам
    status: pass
 
-    - summary: |
+   - summary: |
     Проверка отображения карточки товара 
    status: pass   
 
-       - summary: |
+    - summary: |
     Проверка отображения фото товара 
    status: pass  
 
-          - summary: |
+    - summary: |
    Проверка добавления товаров в корзину 
    status: pass
 
-          - summary: |
+    - summary: |
     Проверка успешного оформления заказа 
    status: pass   
 
-          - summary: |
+    - summary: |
      Проверка отчистки определенного товара из корзины
    status: pass   
 
-             - summary: |
+    - summary: |
     Проверка отчистки всего списка корзины 
    status: pass  
 
-             - summary: |
+    - summary: |
     Проверка корректного функционирования мобильной версии сайта
    status: fail
 
-                - summary: |
+    - summary: |
     Проверка входа с Firefox browser
    status: pass  
 
-                   - summary: |
+    - summary: |
     Проверка Мультиязычности сайта
    status: fail
 
-                      - summary: |
+    - summary: |
    Проверка ввода отрицательного значения цены в фильтре цен
    status: fail
 
-                         - summary: |
+    - summary: |
      Проверка фильтрации товаров по статусу "в наличии"/"нет в наличии"
    status: fail
 
-                            - summary: |
+    - summary: |
      Ввод буквенных символов в числовое поле 
    status: pass
 
