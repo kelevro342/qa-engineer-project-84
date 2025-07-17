@@ -1,2 +1,1 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/kelevro342/qa-engineer-project-84/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kelevro342/qa-engineer-project-84/actions)
+Привет. Меня зовут Владимир. В данном проекте я тестирую небольшой интернет магазин по продаже вешей: https://hexlet-products-store.vercel.app/. Я ознакомился с требованиями и распределил требования по категориям. Провёл тест-анализ и составил тест-кейсы. По ранее созданным тест-кейсам провёл тестирование. Подготовил багрепорты и выполнил регрессионное тестирование.
