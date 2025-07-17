@@ -7,53 +7,53 @@
     Проверка фильтрации по бренду
   status: pass
 
-  - summary: |
+- summary: |
      Проверка поиска товара по ключевому слову
   status: pass
 
-   - summary: |
+- summary: |
     Проверка фильтрации товара по ценовому диапозону
-   status: pass
+  status: pass
        
-   - summary: |
+- summary: |
     Проверка фильтрации по нескольким брендам
-   status: pass
+  status: pass
 
-   - summary: |
+- summary: |
     Проверка отображения карточки товара 
-   status: pass   
+  status: pass   
 
-    - summary: |
+- summary: |
     Проверка отображения фото товара 
-   status: pass  
+  status: pass  
 
-    - summary: |
+- summary: |
    Проверка добавления товаров в корзину 
-   status: pass
+  status: pass
 
-    - summary: |
+- summary: |
     Проверка успешного оформления заказа 
-   status: pass   
+  status: pass   
 
-    - summary: |
+- summary: |
      Проверка отчистки определенного товара из корзины
-   status: pass   
+  status: pass   
 
-    - summary: |
+- summary: |
     Проверка отчистки всего списка корзины 
-   status: pass  
+  status: pass  
 
-    - summary: |
+- summary: |
     Проверка корректного функционирования мобильной версии сайта
-   status: fail
+  status: fail
   
-    bugreports:
-  - summary: |
+  bugreports:
+- summary: |
       Некорректно работает мобильная версия сайта
-    environment: |
+  environment: |
      Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
-    ОС Windows 11 23H2 22631.5335
-    steps-to-reproduce: |
+     ОС Windows 11 23H2 22631.5335
+  steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
     2. Войти в "Dev Tools" (ctrl+shift+i)
     3. Нажать кнопку Toggle device toolbar
@@ -70,14 +70,14 @@
 
     - summary: |
     Проверка входа с Firefox browser
-   status: pass  
+  status: pass  
 
-    - summary: |
+- summary: |
     Проверка Мультиязычности сайта
-   status: fail
+  status: fail
  
   bugreports:
-  Функция мультиязычности сайта работает некорректно
+     Функция мультиязычности сайта работает некорректно
   environment: |
     Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
@@ -90,12 +90,12 @@
   actual-result: |
     Каточки с описанием товаров не переведены на русский язык
     
-    - summary: |
+- summary: |
    Проверка ввода отрицательного значения цены в фильтре цен
    status: fail
 
    bugreports:
- - summary: |
+- summary: |
     Функция фильтрации по ценовому диапазону работает некорректно, допуская ввод отрицательных значений
   environment: |
     Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
@@ -109,9 +109,9 @@
   actual-result: |
     Сайт допускает ввод отрицательных значений в фильтр диапазона цен, при вводе отрицательного значения в поле "From" срабатывает некорректная фильтрация
 
-    - summary: |
+- summary: |
      Проверка фильтрации товаров по статусу "в наличии"/"нет в наличии"
-   status: fail
+  status: fail
 
   bugreports:
 - summary: |
@@ -133,4 +133,4 @@
 
     - summary: |
      Ввод буквенных символов в числовое поле 
-   status: pass
+  status: pass
