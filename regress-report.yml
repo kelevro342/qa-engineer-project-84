@@ -27,7 +27,7 @@ test-cases:
 
 - summary: |
     Проверка отображения фото товаров в каталоге
-    status: fail
+  status: fail
 
 - summary: |
     Проверка отображения фото товара 
@@ -134,7 +134,7 @@ test-cases:
     2. Нажать на любую карточку товара
         expected-result: |
       Фото товара корректно отображается
-    actual-result: |
+   actual-result: |
       Фото товара отображается некорректно и имеет маленький размер
 
 - summary: |
@@ -146,13 +146,13 @@ test-cases:
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
             expected-result: |
       Фото товара в каталоге корректно отображается
-    actual-result: |
+   actual-result: |
       Фото товара отображается некорректно, растянуты и обрезаны
 
 - summary: |
      Не работает фильтр "в наличии"/"нет в наличии"
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
@@ -165,7 +165,7 @@ test-cases:
 - summary: |
      Пропадает элемент навигации "Next"
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
