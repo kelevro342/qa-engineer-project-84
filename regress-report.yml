@@ -122,7 +122,7 @@ test-cases:
   status: pass
 
   
-  bugreports:
+bugreports:
 
 - summary: |
       Фото товара в карточке маленького размера
