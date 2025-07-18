@@ -3,7 +3,7 @@
     Проверка фильтрации каталога товаров по категории
   requirement: |
     При выборе определенной категории товара, сайт отображает товары, относящиеся к выбранной категории
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -17,7 +17,7 @@
     Проверка фильтрации по бренду
   requirement: |
     При выборе определенного бреда товара, сайт отображает товары, только относящиеся к указанному бренду
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товар с указанными параметрами имеется в наличии
   test-data: |
@@ -44,7 +44,7 @@
     Проверка фильтрации товара по ценовому диапозону
   requirement: |
     При указании значений цены, сайт отображает товары, стоимость которых входят в указанный диапазон
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товар с указанными параметрами имеется в наличии
   test-data: |
@@ -60,7 +60,7 @@
     Проверка фильтрации по нескольким брендам
   requirement: |
     При выборе нескольких брендов, сайт отображает товары, относящиеся к указанным брендам
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товары с указанными параметрами имеются в наличии
   test-data: |
@@ -76,7 +76,7 @@
     Проверка отображения карточки товара 
   requirement: |
     При нажатии иконку товара сайт отображает карточку данного товара с его подробным описанием
-  prerequisites:   
+  prerequisites: |   
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -89,7 +89,7 @@
     Проверка отображения фото товаров в каталоге 
   requirement: |
     При открытии сайта фото товаров должны отображаться корректно
-  prerequisites:   
+  prerequisites: |  
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -103,7 +103,7 @@
     Проверка отображения фото товара 
   requirement: |
     При нажатии иконку товара сайт корректно отображает фото выбранного товара
-  prerequisites:  
+  prerequisites: |  
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -116,7 +116,7 @@
     Проверка добавления товаров в корзину из общего каталога
   requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -130,7 +130,7 @@
     Проверка добавления товаров в корзину из карточки товара
   requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -145,7 +145,7 @@
     Проверка добавления разных товаров в корзину из общего каталога
   requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -159,7 +159,7 @@
     Проверка добавления одинаковых товаров в корзину из общего каталога
   requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -173,7 +173,7 @@
     Проверка успешного оформления заказа 
   requirement: |
     При добавлении товара в корзину, имеется возможность оформить заказ 
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = Amazon Echo Plus
@@ -189,7 +189,7 @@
     Проверка возможности успешного оформления заказа с переходом на страницу оплаты
   requirement: |
     При добавлении товара в корзину, имеется возможность оформить заказ с переходом на страницу оплаты 
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = Amazon Echo Plus
@@ -205,7 +205,7 @@
     Проверка отчистки определенного товара из корзины 
   requirement: |
     При добавлении товара в корзину, имеется возможность удалить товар из корзины 
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = Eggs
@@ -222,7 +222,7 @@
     Проверка отчистки всего списка корзины 
   requirement: |
     При добавлении нескольких товаров, имеется возможность удалить весь список товаров из корзины одним нажатием
-  prerequisites:
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     empty
@@ -408,7 +408,7 @@
     Проверка закрытия окна при успешном оформлении заказа с помощью кнопки "X"
   requirement: |
     Окно успешного оформления товара должно закрываться при нажатии на кнопку "Button.bnt-close"
-  prerequisites:   
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = Amazon Echo Plus
@@ -425,7 +425,7 @@
     Проверка закрытия окна при успешном оформлении заказа с помощью кнопки "Закрыть"
   requirement: |
     Окно успешного оформления товара должно закрываться при нажатии на кнопку "закрыть"
-  prerequisites:   
+  prerequisites: |  
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = Amazon Echo Plus
@@ -437,3 +437,4 @@
     - Нажать "Закрыть"
   expected-result: |
     При нажатии на кнопку "закрыть" происходит закрытие окна успешно
+
