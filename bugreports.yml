@@ -50,7 +50,7 @@
 - summary: |
     Нет информации об отсутствующих товарах
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. выбрать категорию smartphones
@@ -63,7 +63,7 @@
 - summary: |
     Карточка товара выходит за границы
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
@@ -80,7 +80,7 @@
 - summary: |
     Нет страницы оплаты товара
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
@@ -96,7 +96,7 @@
 - summary: |
    Не работает фильтр по хештегу
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
@@ -111,7 +111,7 @@
 - summary: |
    Ошибка сервера при оформлении заказа
   environment: |
-  Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
+    Google Chrome Версия: 138.0.7204.97 (Официальная сборка) (64 бит)
     ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
