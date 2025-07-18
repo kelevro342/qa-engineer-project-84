@@ -132,7 +132,7 @@ test-cases:
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажать на любую карточку товара
-        expected-result: |
+   expected-result: |
       Фото товара корректно отображается
    actual-result: |
       Фото товара отображается некорректно и имеет маленький размер
@@ -144,7 +144,7 @@ test-cases:
      ОС Windows 11 23H2 22631.5335
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
-            expected-result: |
+   expected-result: |
       Фото товара в каталоге корректно отображается
    actual-result: |
       Фото товара отображается некорректно, растянуты и обрезаны
@@ -157,7 +157,7 @@ test-cases:
   steps-to-reproduce: |
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
     2. снять флажок "In Stock"
-      expected-result: |
+  expected-result: |
     Сайт должен корректно отобразить информацию о товарах со статусом "нет в наличии"
   actual-result: |
     Не происходит фильтрации товара "нет в наличии"
@@ -171,8 +171,8 @@ test-cases:
     1. Зайти на главную страницу страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажать "Next"
     2. снять флажок "In Stock"
-      expected-result: |
+   expected-result: |
     Сайт должен корректно отобразить информацию о товарах, элементы навигации должны работать корректно
-  actual-result: |
+   actual-result: |
    Некорректно работает навигация при снятии флажка "In Stock", а именно  пропадает элемент навигации "Next"
     
