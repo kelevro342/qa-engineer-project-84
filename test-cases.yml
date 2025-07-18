@@ -312,7 +312,7 @@
     Проверка невозможности ввода буквенных символов в числовое поле 
   requirement: |
     Значение числового поля ценового диапазона "Price" натуральные числа от "0" до "6577.499"
-     prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Символы для ввода "qwerty"
