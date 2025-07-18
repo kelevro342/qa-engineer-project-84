@@ -1,247 +1,247 @@
 ---
 - summary: |
     Проверка фильтрации каталога товаров по категории
-requirement: |
+  requirement: |
     При выборе определенной категории товара, сайт отображает товары, относящиеся к выбранной категории
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Открыть список категорий
     - Выбрать из списка категорию furniture
-expected-result: |
+  expected-result: |
     Сайт отображает товары, относящиеся к категории furniture
 
 - summary: |
     Проверка фильтрации по бренду
-requirement: |
+  requirement: |
     При выборе определенного бреда товара, сайт отображает товары, только относящиеся к указанному бренду
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товар с указанными параметрами имеется в наличии
-test-data: |
+  test-data: |
     Brend = Essence
-steps:
+  steps:
     - Установить флажок "Essence"
-expected-result: |
+  expected-result: |
     Сайт отображает товары, относящиеся к бренду "Essence"
 
 - summary: |
     Проверка поиска товара по ключевому слову
-requirement: |
+  requirement: |
     При вводе товара по ключевому слову, сайт отображает все товары, в названии которых присутствует введенное слово
-prerequisites: |
+  prerequisites: |
     открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Ключевое слово = Apple
-steps:
+  steps:
     - Ввести Apple в поле поиска
-expected-result: |
+  expected-result: |
     Сайт отображает все товары с имеющие в названии слово Apple
 
 - summary: |
     Проверка фильтрации товара по ценовому диапозону
-requirement: |
+  requirement: |
     При указании значений цены, сайт отображает товары, стоимость которых входят в указанный диапазон
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товар с указанными параметрами имеется в наличии
-test-data: |
+  test-data: |
     from = 1
     to = 100
-steps:
+  steps:
     - Ввести в поле "From" значение 1
     - Ввести в поле "To" значение 100
-expected-result: |
+  expected-result: |
     Сайт отображает товары, относящиеся к установленному диапазону цены
 
 - summary: |
     Проверка фильтрации по нескольким брендам
-requirement: |
+  requirement: |
     При выборе нескольких брендов, сайт отображает товары, относящиеся к указанным брендам
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
     Товары с указанными параметрами имеются в наличии
-test-data: |
+  test-data: |
     Brend = Essence
     Brend = Velvet Touch
-steps:
+  steps:
     - Установить флажок "Essence"
     - Установить флажок "Velvet Touch"
-expected-result: |
+  expected-result: |
     Сайт отображает товары, относящиеся к брендам "Essence" и "Velvet Touch"
       
 - summary: |
     Проверка отображения карточки товара 
-requirement: |
+  requirement: |
     При нажатии иконку товара сайт отображает карточку данного товара с его подробным описанием
-prerequisites:   
+  prerequisites:   
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать на иконку любого товара
-expected-result: |
+  expected-result: |
     На странице товара должна отображаться информация о названии, рейтинге, цене, со скидкой и без неё 
 
 - summary: |
     Проверка отображения фото товаров в каталоге 
-requirement: |
+  requirement: |
     При открытии сайта фото товаров должны отображаться корректно
-prerequisites:   
+  prerequisites:   
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать "Next"
     - Нажать "Previous"
-expected-result: |
+  expected-result: |
    Фото товаров в каталоге не обрезаются и не деформируются
 
 - summary: |
     Проверка отображения фото товара 
-requirement: |
+  requirement: |
     При нажатии иконку товара сайт корректно отображает фото выбранного товара
-prerequisites:  
+  prerequisites:  
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Открыть фото товара путем нажатия на иконку любого товара
-expected-result: |
+  expected-result: |
     Фото соответствует выбранному товару и корректно отображается  
 
 - summary: |
     Проверка добавления товаров в корзину из общего каталога
-requirement: |
+  requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать на "Add to cart", любого выбранного товара
     - Открыть корзину
-expected-result: |
+  expected-result: |
     Сайт отображает корзину, выбранный товар находится в корзине
 
 - summary: |
     Проверка добавления товаров в корзину из карточки товара
-requirement: |
+  requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать на карточку любого товара
     - Нажать на "Add to cart"
     - Открыть корзину
-expected-result: |
+  expected-result: |
     Сайт отображает корзину, выбранный товар находится в корзине
 
 - summary: |
     Проверка добавления разных товаров в корзину из общего каталога
-requirement: |
+  requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать на "Add to cart" на разных товаров
     - Открыть корзину
-expected-result: |
+  expected-result: |
     Сайт отображает корзину, выбранные товары находятся в корзине
 
 - summary: |
     Проверка добавления одинаковых товаров в корзину из общего каталога
-requirement: |
+  requirement: |
     При нажатии на кнопку "Add to cart" товар добовляется в корзину
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Нажать трижды на "Add to cart" на одном и том же товаре
     - Открыть корзину
-expected-result: |
+  expected-result: |
     Сайт отображает корзину, выбранные товары в нужном количестве находятся в корзине
 
 - summary: |
     Проверка успешного оформления заказа 
-requirement: |
+  requirement: |
     При добавлении товара в корзину, имеется возможность оформить заказ 
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Amazon Echo Plus
-steps:
+  steps:
     - В строке Search ввести "Amazon Echo Plus"
     - В карточке товара нажать "Add to cart"
     - Открыть корзину
     - Нажимать "checkout"
-expected-result: |
+  expected-result: |
     Отображается вкладка Order placed successfully с информацией о сделанном заказе
 
 - summary: |
     Проверка возможности успешного оформления заказа с переходом на страницу оплаты
-requirement: |
+  requirement: |
     При добавлении товара в корзину, имеется возможность оформить заказ с переходом на страницу оплаты 
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Amazon Echo Plus
-steps:
+  steps:
     - В строке Search ввести "Amazon Echo Plus"
     - В карточке товара нажать "Add to cart"
     - Открыть корзину
     - Нажимать "checkout"
-expected-result: |
+  expected-result: |
     Успешно оформляется заказ, с переходом на страницу оплаты
 
 - summary: |
     Проверка отчистки определенного товара из корзины 
-requirement: |
+  requirement: |
     При добавлении товара в корзину, имеется возможность удалить товар из корзины 
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Eggs
     Товар = Fish steak
-steps:
+  steps:
     - Add to cart Eggs
     - Add to cart Fish steak
     - Перейти в корзину 
     - В строке "Fish steak"  нажать "delete"   
-expected-result: |
+  expected-result: |
     В корзине остался товар Eggs
 
 - summary: |
     Проверка отчистки всего списка корзины 
-requirement: |
+  requirement: |
     При добавлении нескольких товаров, имеется возможность удалить весь список товаров из корзины одним нажатием
-prerequisites:
+  prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Добавить 3 разных товара в корзину
     - Перейти в корзину 
     - Нажать "Clear cart"
-expected-result: |
+  expected-result: |
     После нажатия "Clear cart" все товары из корзины удалены
 
 - summary: |
     Проверка корректного функционирования мобильной версии сайта
-requirement: |
+  requirement: |
     Сайт магазина должен иметь корректно работающую мобильную версию.
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Browser = Chrome Версия: 137.0.7151.122 (Официальная сборка) (64 бит)
-steps:
+  steps:
     - Войти в "Dev Tools"
     - Нажимаем кнопку Toggle device toolbar
     - Выбрать нужную категорию товара
@@ -250,103 +250,103 @@ steps:
     - Открыть Корзину
     - Оформить заказ путем нажатия "checkout"
     - Вернуться на главную страницу магазина путем нажатия "Continue shopping"
-expected-result: |
+  expected-result: |
     Корректно отображается и функционирует мобильная версия сайта 
 
 - summary: |
     Проверка входа с Firefox browser
-requirement: |
+  requirement: |
     Сайт должен корректно открываться и функционировать с разных браузеров
-prerequisites: |
+  prerequisites: |
     Наличее Firefox browser
-test-data: |
+  test-data: |
     Browser = Firefox browser 140.0.2 (64-разрядный)
-steps:
+  steps:
     - Открыть https://hexlet-products-store.vercel.app/
-expected-result: |
+  expected-result: |
     Корректно отображается сайт Firefox browser
 
 - summary: |
     Проверка работы Мультиязычности сайта
-requirement: |
+  requirement: |
     Сайт должен иметь локализацию (перевод) на русский и английский языки
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - нажать "Language" в шапке сайта
     - Из выпадающего списка выбрать "Russian"
-expected-result: |
+  expected-result: |
     Элементы интерфейса сайта, категории товаров и описание в карточках товаров отображаются корректно на русском языке
 
 - summary: |
     Проверка невозможности ввода отрицательного значения цены в фильтре цен
-requirement: |
+  requirement: |
     Сайт должен автоматически предотврашать или не давать возможность провести фильтрацию цен с отрицательным значением 
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Ввести отрицательное значение в поле "From"
     - Ввести отрицательное значение в поле "To"
-expected-result: |
+  expected-result: |
     Не удалось ввести отрицательное значение в фильтр цен, фильрация не срабатывает
 
 - summary: |
     Проверка фильтрации товаров по статусу "в наличии"/"нет в наличии"
-requirement: |
+  requirement: |
     Сайт магазина должен корректно отображать информацию о статусе "в наличии"/"нет в наличии"
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - выбрать категорию Beauty
     - снять флажок "In Stock"
-expected-result: |
+  expected-result: |
     Сайт отображает информацию о товарах, имеющих статус "нет в наличии"
 
 - summary: |
     Проверка невозможности ввода буквенных символов в числовое поле 
-requirement: |
+  requirement: |
     Значение числового поля ценового диапазона "Price" натуральные числа от "0" до "6577.499"
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Символы для ввода "qwerty"
-steps:
+  steps:
     - Вводим буквенные символы "qwerty" в числовое поле "Price" 
-expected-result: |
+  expected-result: |
     Невозможно ввести буквенные символы в числовое поле
 
 - summary: |
     Проверка работы навигации по страницам каталога
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность просматривать каталог товаров с помощью кнопок "Next" и "Previous"
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
    empty
-steps:
+  steps:
     - Нажать кнопку "Next" вверху каталога
     - Нажать кнопку "Previous"вверху каталога
     - Нажать кнопку "Next" внизу каталога
     - Нажать кнопку "Previous"внизу каталога 
-expected-result: |
+  expected-result: |
     При нажатии на кнопки "Next"/"Previous" страницы каталога переключаются соответственно вперед/назад
 
 - summary: |
     Проверка поиска товара по хештегу
-requirement: |
+  requirement: |
     Сайт должен отображать товары соответствующие хештегу при взаимодействии с ним
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Black Sun Glasses
     Хештег = #sunglasses
-steps:
+  steps:
     - Ввести в строке поиска товаров Black Sun Glasses
     - Выбрать карточку товара Black Sun Glasses
     - Перейти по хештегу #sunglasses
@@ -355,13 +355,13 @@ steps:
 
 - summary: |
     Проверка запроса на сервер при оформлении заказа
-requirement: |
+  requirement: |
     При оформлении заказа сайт должен отправлять запрос на сервер и получать ответ с сервера без ошибок
-prerequisites: |
+  prerequisites: |
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = "Amazon Echo Plus"
-steps:
+  steps:
     - В строке Search ввести "Amazon Echo Plus"
     - В карточке товара нажать "Add to cart"
     - Открыть корзину
@@ -369,71 +369,71 @@ steps:
     - Открыть в Devtools вкладку Network
     - Во вкладке Network выбрать фильтр Fetch/XHR
     - Нажать "checkout"
-expected-result: |
+  expected-result: |
      При оформлении заказа в Devtools на вкладке Network в фильтре Fetch/XHR должен появиться статус 200 OK
 
 - summary: |
     Проверка запроса на сервер при переходе из корзины в магазин
-requirement: |
+  requirement: |
     При переходе из корзины в магазин сайт должен отправлять запрос на сервер и получать ответ с сервера без ошибок
-prerequisites: |
+  prerequisites: |
     Открыта страница корзины https://hexlet-products-store.vercel.app/cart
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Открыть Devtools
     - Открыть в Devtools вкладку Network
     - Во вкладке Network выбрать фильтр Fetch/XHR
     - Нажать "магазин"
-expected-result: |
+  expected-result: |
      При переходе из корзины в магазин в Devtools на вкладке Network в фильтре Fetch/XHR должен появиться статус 200 OK
 
 - summary: |
     Проверка запроса на сервер при нажатии "продолжить покупки" в корзине
-requirement: |
+  requirement: |
     При переходе из корзины в магазин сайт должен отправлять запрос на сервер и получать ответ с сервера без ошибок
-prerequisites: |
+  prerequisites: |
     Открыта страница корзины https://hexlet-products-store.vercel.app/cart
-test-data: |
+  test-data: |
     empty
-steps:
+  steps:
     - Открыть Devtools
     - Открыть в Devtools вкладку Network
     - Во вкладке Network выбрать фильтр Fetch/XHR
     - Нажать "продолжить покупки"
-expected-result: |
+  expected-result: |
      При нажатии "продолжить покупки" в корзине, в Devtools на вкладке Network в фильтре Fetch/XHR должен появиться статус 200 OK
 
 - summary: |
     Проверка закрытия окна при успешном оформлении заказа с помощью кнопки "X"
-requirement: |
+  requirement: |
     Окно успешного оформления товара должно закрываться при нажатии на кнопку "Button.bnt-close"
-prerequisites:   
+  prerequisites:   
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Amazon Echo Plus
-steps:
+  steps:
     - В строке Search ввести "Amazon Echo Plus"
     - В карточке товара нажать "Add to cart"
     - Открыть корзину
     - Нажать "checkout"
     - Нажать "X"
-expected-result: |
+  expected-result: |
     При нажатии на кнопку "X" происходит закрытие окна успешного оформления заказа
 
 - summary: |
     Проверка закрытия окна при успешном оформлении заказа с помощью кнопки "Закрыть"
-requirement: |
+  requirement: |
     Окно успешного оформления товара должно закрываться при нажатии на кнопку "закрыть"
-prerequisites:   
+  prerequisites:   
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-test-data: |
+  test-data: |
     Товар = Amazon Echo Plus
-steps:
+  steps:
     - В строке Search ввести "Amazon Echo Plus"
     - В карточке товара нажать "Add to cart"
     - Открыть корзину
     - Нажать "checkout"
     - Нажать "Закрыть"
-expected-result: |
-    При нажатии на кнопку "закрыть" происходит закрытие окна успешного оформления заказа
+  expected-result: |
+    При нажатии на кнопку "закрыть" происходит закрытие окна успешно
