@@ -95,8 +95,7 @@ test-cases:
 
 - summary: |
      Проверка работы навигации по страницам каталога
-  status: pass
-
+  status: fail
 - summary: |
      Проверка поиска товара по хештегу 
   status: pass
